@@ -4,5 +4,6 @@ Discord uses Snowflake to generate IDs for accounts, messages, channels, and ser
 
 In order to copy an ID, make sure you have enabled Developer Mode in User Settings > Appearance. Then, right click on the element and choose the Copy ID option.
 
-Inspired by: https://pixelatomy.com/snow-stamp/
-Discord Snowflake info: https://discord.com/developers/docs/reference#convert-snowflake-to-datetime
+Website: https://pitabread8.github.io/Discord-Snowflakes  
+Inspired by: https://pixelatomy.com/snow-stamp  
+Discord Snowflake info: https://discord.com/developers/docs/reference#convert-snowflake-to-datetime  
