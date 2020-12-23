@@ -4,25 +4,35 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #121212;
-    color: #ededed;
+    color: #b1e6e7;
+    margin: 50px;
+    font-size: 50px;
+    font-family: "Rancho";
 }
 
-div {
-    margin: 10px;
-}
-
-input {
-    border: solid 2px #def1f2;
-}
+div {margin: 50px;}
 
 #input {
-    /* width: 500px; */
-    width: 18em;
-    /* height: 100px; */
+    width: 17em;
     height: 2.5em;
     font-size: 30px;
+    outline: none;
+    border: solid 10px #def1f2;
+    background-color: #121212;
+    color: #b1e6e7;
+    margin: 0;
+    font-family: "Rancho";
 }
 
-h1 {
-    color: #def1f2;
+#reset {
+    width: 5em;
+    height: 2.5em;
+    font-size: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: solid 10px #def1f2;
+    background-color: #def1f2;
+    color: #121212;
+    margin-left: -50px;
+    font-family: "Rancho";
 }
