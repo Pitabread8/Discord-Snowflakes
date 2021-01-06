@@ -1,38 +1,87 @@
+:root {
+    --black: #121212;
+    --blue: #90e2e4;
+    /* #var(--blue) */
+    --white: #def1f2;
+}
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #121212;
-    color: #b1e6e7;
+    background-color: var(--black);
     margin: 50px;
-    font-size: 50px;
+    overflow: hidden;
+}
+
+h1 {
+    color: var(--blue);
+    font-size: 70px;
     font-family: "Rancho";
+    background-color: var(--black);
+    display: none;
 }
 
 div {margin: 50px;}
 
 #input {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 17em;
     height: 2.5em;
     font-size: 30px;
     outline: none;
-    border: solid 10px #def1f2;
-    background-color: #121212;
-    color: #b1e6e7;
+    border: solid 10px var(--white);
+    border-radius: 15px;
+    background-color: var(--black);
+    color: var(--blue);
     margin: 0;
     font-family: "Rancho";
 }
 
 #reset {
+    position: fixed;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 5em;
     height: 2.5em;
     font-size: 30px;
-    border-radius: 5px;
+    border-radius: 10px;
     outline: none;
-    border: solid 10px #def1f2;
-    background-color: #def1f2;
-    color: #121212;
-    margin-left: -50px;
+    border: solid 10px var(--white);
+    background-color: var(--white);
+    color: var(--black);
     font-family: "Rancho";
+}
+
+#reset:hover {
+    border: var(--black);
+    background-color: var(--black);
+    color: var(--white);
+    box-shadow: 0 0 20px var(--white);
+}
+
+.bg-icon {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: -1;
+}
+
+#snowflake {
+    color: var(--white);
+    font-size: 50px;
+    text-shadow: 0 0 5px var(--blue);
+}
+
+#circle {
+    background-color: var(--white);
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--blue);
 }
