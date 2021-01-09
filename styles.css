@@ -1,7 +1,6 @@
 :root {
     --black: #121212;
     --blue: #90e2e4;
-    /* #var(--blue) */
     --white: #def1f2;
 }
 
@@ -13,23 +12,50 @@ body {
     background-color: var(--black);
     margin: 50px;
     overflow: hidden;
+    font-family: "Raleway";
+}
+
+#heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
 }
 
 h1 {
-    color: var(--blue);
     font-size: 70px;
+    margin-right: 20px;
+}
+
+#q-mark {
+    margin: -40px;
+    font-size: 40px;
+}
+
+#circle1 {
+    border: solid 5px var(--white);
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+h2 {
+    color: var(--blue);
+    font-size: 80px;
     font-family: "Rancho";
-    background-color: var(--black);
     display: none;
 }
 
 div {margin: 50px;}
 
+#input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #input {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 17em;
     height: 2.5em;
     font-size: 30px;
@@ -39,14 +65,11 @@ div {margin: 50px;}
     background-color: var(--black);
     color: var(--blue);
     margin: 0;
-    font-family: "Rancho";
+    font-family: "Raleway";
+    margin: 10px;
 }
 
 #reset {
-    position: fixed;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 5em;
     height: 2.5em;
     font-size: 30px;
@@ -56,6 +79,7 @@ div {margin: 50px;}
     background-color: var(--white);
     color: var(--black);
     font-family: "Rancho";
+    margin: 10px;
 }
 
 #reset:hover {
@@ -78,10 +102,18 @@ div {margin: 50px;}
     text-shadow: 0 0 5px var(--blue);
 }
 
-#circle {
+#circle2 {
     background-color: var(--white);
     height: 12px;
     width: 12px;
     border-radius: 50%;
     box-shadow: 0 0 10px var(--blue);
+}
+
+img {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
 }

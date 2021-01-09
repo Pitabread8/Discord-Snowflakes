@@ -1,9 +1,9 @@
-// To-do:
-// Add Favicon
-// Change/Add Font
-// Falling snow (own code or online)?
-// Github Link
-// What is a snowflake, alert with blurred background?
+// To-do: Falling snow (own code or online)?
+
+function giveHelp() {
+    alert("Discord uses Snowflake to generate IDs for accounts, messages, channels, and servers based on their timestamps.\
+    \n\nIn order to copy an ID, make sure you have enabled Developer Mode in User Settings > Appearance. Then, right click on the element and select the 'Copy ID' option.");
+}
 
 function convertStamp() {
     let input = document.getElementById("input");
@@ -11,7 +11,7 @@ function convertStamp() {
     let result = document.getElementById("result");
     
     input.addEventListener("keyup", function(event) {
-        if (event.keyCode === 82 || input.value.length === 0) {
+        if (event.code === 'KeyR' || input.value.length === 0) {
             reset.click();
         }
         else {
@@ -58,7 +58,7 @@ function randomPosition() {
 
     for (i = 0; i < 50; i++) {
         let icon = document.createElement('div');
-        icon.id = "circle";
+        icon.id = "circle2";
         icon.className = "bg-icon";
         container.appendChild(icon);
     }
