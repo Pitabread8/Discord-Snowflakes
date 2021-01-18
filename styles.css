@@ -27,17 +27,12 @@ h1 {
     margin-right: 20px;
 }
 
-#q-mark {
-    margin: -40px;
-    font-size: 40px;
+#help-btn {
+    color: var(--white);
 }
 
-#circle1 {
-    border: solid 5px var(--white);
-    background-color: transparent;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
+#help-btn:hover {
+    color: var(--blue);
 }
 
 h2 {
@@ -102,7 +97,7 @@ div {margin: 50px;}
     text-shadow: 0 0 5px var(--blue);
 }
 
-#circle2 {
+#circle {
     background-color: var(--white);
     height: 12px;
     width: 12px;

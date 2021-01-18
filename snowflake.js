@@ -1,8 +1,8 @@
-// To-do: Falling snow (own code or online)?
+// To-do: Falling snow (write code or find online)?
 
 function giveHelp() {
     alert("Discord uses Snowflake to generate IDs for accounts, messages, channels, and servers based on their timestamps.\
-    \n\nIn order to copy an ID, make sure you have enabled Developer Mode in User Settings > Appearance. Then, right click on the element and select the 'Copy ID' option.");
+    \n\nIn order to copy an ID, make sure you have enabled Developer Mode in User Settings > Appearance. Then, right click on the element and select the Copy ID option.");
 }
 
 function convertStamp() {
@@ -58,35 +58,27 @@ function randomPosition() {
 
     for (i = 0; i < 50; i++) {
         let icon = document.createElement('div');
-        icon.id = "circle2";
+        icon.id = "circle";
         icon.className = "bg-icon";
         container.appendChild(icon);
     }
 
-    // collect all the divs
     let icons = document.getElementsByClassName('bg-icon');
 
-    // get window width and height
     let winWidth = window.innerWidth;
     let winHeight = window.innerHeight;
-    console.log(winHeight, winWidth)
     
-    // function that returns a random number between a min and max
     function getRandomNumber(min, max) {return Math.random() * (max - min) + min;}
 
     let ylist = [];
 
-    // i stands for "index". you could also call this banana or haircut. it's a variable
     for (i = 0; i < icons.length; i++ ) {
-        // shortcut! the current div in the list
         let thisIcon = icons[i];
         
-        // get random numbers for each element
         randomTop = getRandomNumber(0, winHeight);
         ylist.push(randomTop);
         randomLeft = getRandomNumber(0, winWidth);
         
-        // update top and left position
         thisIcon.style.top = randomTop +"px";
         thisIcon.style.left = randomLeft +"px";
     }

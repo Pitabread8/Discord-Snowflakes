@@ -8,13 +8,16 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="snowflake.js"></script>
     </head>
     <body>
         <div id="heading-container">
             <h1>Discord Snowflake to Timestamp</h1>
-            <span onclick="giveHelp()" id="circle1"></span>
-            <span onclick="giveHelp()" id="q-mark">&#63</span>
+            <span onclick="giveHelp()" class="fa-stack fa-2x" id="help-btn">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-question fa-stack-1x"></i>
+            </span>
         </div>
         <div id="input-container">
             <input autofocus type='text' id="input" onkeyup="convertStamp();" value placeholder="Try 175928847299117063">
