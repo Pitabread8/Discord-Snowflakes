@@ -1,10 +1,18 @@
 // To-do: Falling snow (write code or find online)?
 
-function giveHelp() {
-    alert("Discord uses Snowflake to generate IDs for accounts, messages, channels, and servers based on their timestamps.\
-    \n\nIn order to copy an ID, make sure you have enabled Developer Mode in User Settings > Appearance. Then, right click on the element and select the Copy ID option.");
+// new function
+function toggleHelp() {
+    let help = document.getElementById("help-container");
+    
+    if (help.style.display === "none") {
+        help.style.display = "flex";
+    } 
+    else {
+        help.style.display = "none";
+    }
 }
 
+// Converts ID to date
 function convertStamp() {
     let input = document.getElementById("input");
     let reset = document.getElementById("reset");
@@ -45,6 +53,7 @@ function convertStamp() {
     }
 }
 
+// Determins position of background objects
 function randomPosition() {
     let container = document.body;
 
@@ -84,6 +93,7 @@ function randomPosition() {
     }
 }
 
+// In progress
 function moveIcons() {
     let icons = document.getElementsByClassName('bg-icon');
     for (i = 0; i < 849; i++) {

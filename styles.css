@@ -1,7 +1,7 @@
 :root {
     --black: #121212;
-    --blue: #90e2e4;
-    --white: #def1f2;
+    --blue: #93E7FB;
+    --white: #E0FFFF;
 }
 
 body {
@@ -44,6 +44,37 @@ h2 {
 
 div {margin: 50px;}
 
+/*  new styles (help-container) */
+#help-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    backdrop-filter: blur(6px);
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+#help-container div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 550px;
+    height: 225px;
+    border: var(--blue) 10px solid;
+    background-color: var(--white);
+    border-radius: 15px;
+}
+
+#help-container p {
+    color: var(--black);
+    text-align: justify;
+    font-size: 18px;
+}
+
 #input-container {
     display: flex;
     align-items: center;
@@ -77,11 +108,11 @@ div {margin: 50px;}
     margin: 10px;
 }
 
+/* new styles */
 #reset:hover {
-    border: var(--black);
-    background-color: var(--black);
-    color: var(--white);
-    box-shadow: 0 0 20px var(--white);
+    border: var(--blue);
+    background-color: var(--blue);
+    color: var(--black);
 }
 
 .bg-icon {
