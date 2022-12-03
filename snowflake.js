@@ -1,4 +1,6 @@
-// To-do: Falling snow (write code or find online)?
+// To-do:
+// Falling snow (write code or find online)?
+// Help modal
 
 // new function
 function toggleHelp() {
@@ -19,7 +21,7 @@ function convertStamp() {
     let result = document.getElementById("result");
     
     input.addEventListener("keyup", function(event) {
-        if (event.code === 'KeyR' || input.value.length === 0) {
+        if (input.value.length === 0) {
             reset.click();
         }
         else {
@@ -57,15 +59,7 @@ function convertStamp() {
 function randomPosition() {
     let container = document.body;
 
-    for (i = 0; i < 20; i++) {
-        let icon = document.createElement('span');
-        icon.id = "snowflake";
-        icon.className = "bg-icon";
-        icon.innerHTML = "&#10052";
-        container.appendChild(icon);
-    }
-
-    for (i = 0; i < 50; i++) {
+    for (i = 0; i < 75; i++) {
         let icon = document.createElement('div');
         icon.id = "circle";
         icon.className = "bg-icon";

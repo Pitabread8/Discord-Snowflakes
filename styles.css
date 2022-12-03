@@ -38,7 +38,7 @@ h1 {
 h2 {
     color: var(--blue);
     font-size: 80px;
-    font-family: "Rancho";
+    font-family: "Source Code Pro";
     display: none;
 }
 
@@ -86,12 +86,12 @@ div {margin: 50px;}
     height: 2.5em;
     font-size: 30px;
     outline: none;
-    border: solid 10px var(--white);
+    border: solid 3px var(--white);
     border-radius: 15px;
     background-color: var(--black);
     color: var(--blue);
-    margin: 0;
-    font-family: "Raleway";
+    padding: 10px 25px;
+    font-family: "Source Code Pro";
     margin: 10px;
 }
 
@@ -101,17 +101,17 @@ div {margin: 50px;}
     font-size: 30px;
     border-radius: 10px;
     outline: none;
-    border: solid 10px var(--white);
-    background-color: var(--white);
-    color: var(--black);
-    font-family: "Rancho";
+    border: solid 3px var(--white);
+    background-color: transparent;
+    color: var(--white);
+    font-family: "Raleway";
     margin: 10px;
 }
 
 /* new styles */
 #reset:hover {
     border: var(--blue);
-    background-color: var(--blue);
+    background-color: var(--white);
     color: var(--black);
 }
 
@@ -122,16 +122,11 @@ div {margin: 50px;}
     z-index: -1;
 }
 
-#snowflake {
-    color: var(--white);
-    font-size: 50px;
-    text-shadow: 0 0 5px var(--blue);
-}
-
 #circle {
     background-color: var(--white);
-    height: 12px;
-    width: 12px;
+    height: 15px;
+    width: 15px;
     border-radius: 50%;
     box-shadow: 0 0 10px var(--blue);
+    opacity: 25%;
 }
