@@ -12,7 +12,7 @@ body {
     background-color: var(--black);
     margin: 50px;
     overflow: hidden;
-    font-family: "Raleway";
+    font-family: "Unbounded";
 }
 
 #heading-container {
@@ -104,7 +104,7 @@ div {margin: 50px;}
     border: solid 3px var(--white);
     background-color: transparent;
     color: var(--white);
-    font-family: "Raleway";
+    font-family: "Source Code Pro";
     margin: 10px;
 }
 
@@ -130,3 +130,34 @@ div {margin: 50px;}
     box-shadow: 0 0 10px var(--blue);
     opacity: 25%;
 }
+
+
+/* Animated snowfall (in-progress) */
+
+/* @keyframes snowfall {
+    0% {
+        top: 0;
+    }
+    50% {
+        transform: translateY(100vh);
+    }
+    100% {
+        position: translateY(500vh);
+    }
+} */
+
+/* @for $i from 1 through 50 {
+    .snowflake:nth-child(#{$i}) {
+        --size: #{random(5) * 0.2}vw;
+        --left-ini: #{random(20) - 10}vw;
+        --left-end: #{random(20) - 10}vw;
+        left: #{random(100)}vw;
+        animation: snowfall #{5 + random(10)}s linear infinite;
+        animation-delay: -#{random(10)}s;
+    }
+}
+
+/* added small blur every 6 snowflakes*/
+/* .snowflake:nth-child(6n) {
+    filter: blur(1px);
+} */

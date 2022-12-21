@@ -1,6 +1,7 @@
 // To-do:
 // Falling snow (write code or find online)?
 // Help modal
+// Allow only numeric input
 
 // new function
 function toggleHelp() {
@@ -21,6 +22,11 @@ function convertStamp() {
     let result = document.getElementById("result");
     
     input.addEventListener("keyup", function(event) {
+        // Allow only numeric input
+        // if (isNaN(event.key)) {
+        //     input.value = input.value.substr(0, input.value.length - 1);
+        // }
+
         if (input.value.length === 0) {
             reset.click();
         }
@@ -82,8 +88,8 @@ function randomPosition() {
         ylist.push(randomTop);
         randomLeft = getRandomNumber(0, winWidth);
         
-        thisIcon.style.top = randomTop +"px";
-        thisIcon.style.left = randomLeft +"px";
+        thisIcon.style.top = randomTop + "px";
+        thisIcon.style.left = randomLeft + "px";
     }
 }
 
